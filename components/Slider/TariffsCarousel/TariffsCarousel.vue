@@ -4,7 +4,20 @@
   <section class="tariffs-slider-section">
     <h2 class="tariffs-slider-title">Информация о тарифах</h2>
     <div class="swiper-wrapper">
-      <Swiper>
+      <Swiper
+        :slides-per-view="3"
+        :space-between="30"
+        :effect="'creative'"
+        :creative-effect="{
+          prev: {
+            shadow: false,
+            translate: ['-20%', 0, -1],
+          },
+          next: {
+            translate: ['100%', 0, 0],
+          },
+        }"
+      >
         <SwiperSlide v-for="item in 9">
           <div class="swiper-img-wrapper"></div>
           <div class="swiper-info-wrapper">

@@ -3,23 +3,23 @@
 @tailwind components;
 
 @layer components {
-  .tariffs-carousel-section {
+  .tariffs-slider-section {
     @apply w-full h-auto;
     @apply flex flex-col items-center justify-center;
     @apply mb-12 md:mb-24;
   }
 
-  .tariffs-carousel-title {
+  .tariffs-slider-title {
     @apply text-xl font-black md:text-2xl;
     @apply mb-6 md:mb-12;
   }
 
-  .carousel-wrapper {
+  .swiper-wrapper {
     @apply w-full;
     @apply relative;
   }
 
-  .carousel-list {
+  .swiper-list {
     @apply h-56 md:h-96;
     @apply rounded-lg;
     @apply overflow-hidden;
