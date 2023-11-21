@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .input-label {
+    @apply block;
+    @apply text-sm font-semibold text-gray-900;
+  }
+
+  .input-wrapper {
+    @apply mt-2;
+    @apply rounded-md shadow-sm;
+    @apply relative;
+  }
+
+  .input {
+    @apply w-full;
+    @apply block;
+    @apply text-gray-900;
+    @apply sm:text-sm sm:leading-6;
+    @apply py-1.5 pr-4 pl-3;
+    @apply border-0 rounded-md outline-none;
+    @apply ring-1 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#2a4696];
+    /* @apply ring-2 ring-red-500; */
+  }
+
+  .error-input-wrapper {
+    @apply flex items-center;
+    @apply pr-3;
+    @apply absolute inset-y-0 right-0;
+    @apply pointer-events-none;
+  }
+
+  .error-input-icon {
+    @apply w-5 h-5;
+    @apply text-red-500;
+  }
+
+  .error-input-text {
+    @apply text-sm text-red-600;
+    @apply mt-2;
+  }
+}

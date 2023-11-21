@@ -1,9 +1,8 @@
 import { defineNuxtConfig } from "nuxt/config";
-import { resolve } from "path";
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["nuxt-swiper"],
+  modules: ["nuxt-swiper", "@nuxtjs/tailwindcss"],
   swiper: {
     prefix: "Swiper",
     styleLang: "css",

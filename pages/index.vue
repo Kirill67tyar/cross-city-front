@@ -2,14 +2,10 @@
 
 <template>
   <main class="main">
-    <div class="hero-wrapper">
-      <img src="@/public/hero2.jpg" alt="hero" class="hero-img" />
-    </div>
-    <div class="container">
-      <TheForm />
-    </div>
-    <TheService />
-    <TheSlider />
+    <SliderMainBannersSlider />
+    <FormMainForm />
+    <SectionMainService />
+    <SliderTariffsCarousel />
     <TheQuestions />
   </main>
 </template>

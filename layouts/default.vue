@@ -1,7 +1,7 @@
-<script>
-export default {
-  name: "default",
-};
+<script setup>
+import TheHeader from "~/components/Header/TheHeader.vue";
+
+components: TheHeader;
 </script>
 
 <template>

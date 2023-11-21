@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .form-wrapper {
+    @apply w-full h-auto max-w-full min-h-full;
+    @apply flex flex-col md:flex-row md:flex-wrap md:justify-around items-center;
+    @apply my-10 md:my-20 p-6;
+    @apply bg-white;
+    @apply md:rounded-xl;
+    @apply md:shadow-lg shadow-slate-300;
+    @apply border-[10px] border-solid border-[#2a4696];
+    @apply relative;
+  }
+
+  .form-title {
+    @apply w-full h-auto;
+    @apply block;
+    @apply text-lg font-semibold text-center text-black;
+    @apply md:text-xl;
+    @apply mb-6 md:mb-12 md:pr-4;
+  }
+
+  .form-content-wrapper {
+    @apply w-full h-auto md:max-w-[400px];
+  }
+
+  .button-wrapper {
+    @apply w-full;
+    @apply flex justify-center md:justify-end;
+  }
+
+  .main-form-button {
+    @apply w-full h-auto md:max-w-[180px] md:max-h-[60px];
+    @apply flex justify-center;
+    @apply text-sm font-semibold text-white uppercase;
+    @apply py-3;
+    @apply bg-[#09b294];
+    @apply border-[1px] border-solid border-[#09b294] rounded outline-none;
+  }
+}

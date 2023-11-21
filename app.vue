@@ -1,5 +1,5 @@
 <script>
-import TheHeader from "./components/TheHeader";
+import TheHeader from "./components/Header/TheHeader.vue";
 import TheFooter from "./components/TheFooter";
 import global from "./assets/styles/global.css";
 
