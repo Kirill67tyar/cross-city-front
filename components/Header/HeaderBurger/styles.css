@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .burger-icon {
+    @apply w-8 h-8;
+  }
+
+  .burger-panel-wrapper {
+    @apply fixed top-0 right-0 left-0 bottom-0 z-20;
+    @apply p-5 pt-14;
+    @apply bg-[#f9f8f8];
+  }
+
+  .burger-navigation-item {
+    @apply text-base font-semibold text-black;
+    @apply mb-2 pb-3 last:mb-0;
+    @apply border-b-[1px] border-solid border-gray-800;
+  }
+}

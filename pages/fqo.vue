@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import useActive from "~/composables/select/useActive";
+import useActive from "~/composables/useActive/useActive";
 
 const { handleClickActive } = useActive("");
 
@@ -109,3 +109,4 @@ const items = [
   }
 }
 </style>
+~/composables/useActive

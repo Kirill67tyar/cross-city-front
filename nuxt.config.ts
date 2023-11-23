@@ -1,18 +1,24 @@
 import { defineNuxtConfig } from "nuxt/config";
-import { resolve } from "path";
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["nuxt-swiper"],
+  modules: ["nuxt-swiper", "@nuxtjs/tailwindcss"],
   swiper: {
     prefix: "Swiper",
     styleLang: "css",
-    modules: ["navigation", "pagination"],
+    modules: ["navigation", "pagination", "autoplay"],
   },
   $production: {
     routeRules: {
       "./**": { isr: true },
     },
+  },
+  imports: {
+    dirs: [
+      "composables",
+      "composables/*/index.{ts,js,mjs,mts}",
+      "composables/**",
+    ],
   },
   spaLoadingTemplate: false,
 });

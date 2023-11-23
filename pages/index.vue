@@ -1,16 +1,20 @@
-<script setup></script>
+<script setup>
+import useParse from "@/composables/useParse/useParse";
+
+const { data } = await useFetch(
+  "https://cross-city-taxi.ru/core/api/tariffs/list/"
+);
+
+const tariffs = useParse(data.value);
+</script>
 
 <template>
   <main class="main">
-    <div class="hero-wrapper">
-      <img src="@/public/hero2.jpg" alt="hero" class="hero-img" />
-    </div>
-    <div class="container">
-      <TheForm />
-    </div>
-    <TheService />
-    <TheSlider />
-    <TheQuestions />
+    <SliderMainBannersSlider />
+    <FormMainForm :items="tariffs" />
+    <SectionMainService />
+    <SliderTariffs :items="tariffs" />
+    <SectionQuestion />
   </main>
 </template>
 

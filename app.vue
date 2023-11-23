@@ -1,6 +1,6 @@
 <script>
-import TheHeader from "./components/TheHeader";
-import TheFooter from "./components/TheFooter";
+import TheHeader from "./components/Header/TheHeader.vue";
+import TheFooter from "./components/Footer/TheFooter";
 import global from "./assets/styles/global.css";
 
 export default {

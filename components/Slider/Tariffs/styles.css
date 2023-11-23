@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .tariffs-slider-section {
+    @apply w-full h-auto;
+    @apply flex flex-col items-center justify-center;
+    @apply mb-12 md:mb-24;
+  }
+
+  .tariffs-slider-title {
+    @apply text-xl font-black md:text-2xl;
+    @apply mb-6 md:mb-12;
+  }
+
+  .slider-list {
+    @apply h-56 md:h-96;
+    @apply rounded-lg;
+    @apply overflow-hidden;
+    @apply relative;
+  }
+
+  .swiper-slide {
+    @apply max-w-sm;
+    @apply flex flex-col justify-end;
+    @apply bg-white;
+    @apply border-[1px] border-[#2a4696] rounded-lg;
+    @apply dark:bg-gray-800 dark:border-gray-700;
+    @apply shadow;
+    @apply relative;
+  }
+
+  .slider-img-wrapper {
+    @apply w-full;
+    @apply flex justify-center;
+    @apply px-5;
+  }
+
+  .slider-img {
+    @apply w-full max-w-[250px] h-auto min-h-[80px];
+    @apply block;
+  }
+
+  .slider-info-wrapper {
+    @apply w-full h-auto;
+    @apply flex flex-col justify-center items-center;
+    @apply p-5;
+    @apply bg-[#2a4696];
+    @apply rounded-b-md;
+  }
+
+  .slider-info-title {
+    @apply block;
+    @apply text-base font-semibold text-center text-white uppercase md:text-lg;
+    @apply mb-5;
+  }
+
+  .slider-info-text {
+    @apply block;
+    @apply text-sm font-normal text-white md:text-base;
+  }
+
+  .slider-info-price {
+    @apply block;
+    @apply text-sm font-black text-white md:text-base;
+  }
+}
