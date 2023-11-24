@@ -1,23 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="about_us-main main">
-    <TheInfoBanner title="О нас" />
-    <section class="about_us-info-section section">
-      <div class="container">
-        <div class="about_us-info-wrapper">
-          <div class="about_us-info-content">
-            <h2 class="about_us-info-title">PROVIDING QUALITY TAXI SERVICES</h2>
-            <p class="about_us-info-text">
-              Sunt turpises acquirere pius, clemens abactores. Cur vita mori?
-              Dexter, secundus caculas callide demitto de fatalis, lotus fortis.
-              Rusticus, neuter fugas interdum. Lorem ipsum dolor sit amet,
-            </p>
-          </div>
-          <div class="about_us-image-wrapper"></div>
-        </div>
-      </div>
-    </section>
+  <div class="about_us-main main">
+    <BannerInfo title="О нас" />
+    <SectionAboutUsInfo />
     <section class="about_us-services-section section">
       <div class="about_us-services-container container">
         <ul class="about_us-services-list">
@@ -61,7 +47,7 @@
       </div>
     </section>
     <TheAboutUsSlider />
-  </main>
+  </div>
 </template>
 
 <style>

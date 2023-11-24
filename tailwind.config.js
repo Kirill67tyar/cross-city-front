@@ -2,7 +2,12 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "info-banner": "url('/public/banner/info-banner.jpg')",
+        arrow: "url('/public/arrow.png')",
+      },
+    },
   },
   plugins: [require("flowbite/plugin")],
 };
