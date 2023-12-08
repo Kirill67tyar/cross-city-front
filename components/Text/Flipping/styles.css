@@ -15,8 +15,7 @@
 
   .flipping-text {
     @apply w-full h-full;
-    @apply flex justify-center items-center;
-    @apply text-2xl font-black text-white leading-[0px];
+    @apply text-2xl font-black text-center text-white leading-[0px];
     @apply m-0;
   }
 }

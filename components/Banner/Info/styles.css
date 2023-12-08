@@ -11,6 +11,6 @@
   }
 
   .info-banner-title {
-    @apply text-4xl font-black text-white uppercase tracking-wide;
+    @apply text-4xl font-black text-white text-center uppercase tracking-wide;
   }
 }

@@ -1,4 +1,6 @@
 <script setup>
+import { Autoplay } from "swiper/modules";
+
 const tariffsSlideProps = defineProps({
   items: Array,
 });
@@ -12,8 +14,14 @@ const tariffs = tariffsSlideProps.items;
     <div class="swiper-wrapper">
       <Swiper
         class="max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-7xl"
+        :modules="[Autoplay]"
         :slides-per-view="2"
         :space-between="30"
+        :autoplay="{
+          delay: 2000,
+          disableOnInteraction: false,
+        }"
+        :loop="true"
         :breakpoints="{
           320: {
             slidesPerView: 1,
@@ -32,14 +40,14 @@ const tariffs = tariffsSlideProps.items;
         <SwiperSlide
           v-for="{ id, car_class, photo, price_per_km } in tariffs"
           :key="id"
+          class="swiper-slide"
         >
           <div class="slider-img-wrapper">
             <img :src="photo" :alt="car_class" class="slider-img" />
           </div>
           <div class="slider-info-wrapper">
             <h4 class="slider-info-title">{{ car_class }}</h4>
-            <p class="slider-info-text">text</p>
-            <span class="slider-info-price">{{ price_per_km }}</span>
+            <span class="slider-info-price">{{ price_per_km + " ₽/КМ" }}</span>
           </div>
         </SwiperSlide>
       </Swiper>

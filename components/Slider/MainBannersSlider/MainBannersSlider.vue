@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { Autoplay } from "swiper/modules";
 </script>
 
@@ -27,6 +27,15 @@ import { Autoplay } from "swiper/modules";
           <div class="slider-img-wrapper">
             <img
               src="@/public/banner/newdriver.jpg"
+              alt="hero"
+              class="banner-img"
+            />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide id="2" key="2">
+          <div class="slider-img-wrapper">
+            <img
+              src="@/public/banner/night.jpg"
               alt="hero"
               class="banner-img"
             />

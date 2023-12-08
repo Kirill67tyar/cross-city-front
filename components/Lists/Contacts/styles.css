@@ -4,17 +4,19 @@
 
 @layer components {
   .contacts-list {
-    @apply flex flex-col;
-    @apply gap-5;
+    @apply flex flex-wrap lg:flex-col;
+    @apply gap-2;
+    @apply md:gap-5;
   }
 
   .contacts-item {
     @apply w-full;
-    @apply flex justify-start;
-    @apply pl-4;
+    @apply flex justify-center;
+    @apply md:justify-start;
+    @apply cursor-pointer;
   }
 
   .contacts-item-text {
-    @apply text-lg font-normal text-white;
+    @apply text-base font-normal text-white;
   }
 }

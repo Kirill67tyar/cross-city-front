@@ -5,30 +5,32 @@
 @layer components {
   .contacts-section {
     @apply w-full;
-    @apply flex flex-col items-center;
+    @apply flex flex-col;
+    @apply mb-24;
   }
 
   .contacts-wrapper {
-    @apply w-full max-w-6xl;
-    @apply flex justify-between;
+    @apply w-full;
+    @apply xl:max-w-6xl;
+    @apply flex flex-col justify-between;
+    @apply lg:flex-row;
+    @apply xl:mx-auto;
     @apply bg-white;
-    @apply shadow-md shadow-blue-950;
+    @apply md:shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] shadow-blue-950;
   }
 
   .contacts-info-wrapper {
-    @apply w-full max-w-[400px] h-auto min-h-full;
+    @apply w-full max-w-full h-auto min-h-full;
     @apply flex flex-col;
-    @apply py-10 pl-10;
+    @apply p-5;
+    @apply md:py-10 md:pl-10;
     @apply bg-[#2a4696];
   }
 
   .contacts-info-title {
-    @apply text-3xl font-semibold text-white;
-    @apply mb-7;
-  }
-
-  .contacts-info-text {
-    @apply text-base font-normal text-white;
-    @apply mb-10;
+    @apply text-lg font-semibold text-white text-center whitespace-nowrap;
+    @apply md:text-xl lg:text-3xl;
+    @apply mb-4;
+    @apply md:mb-7;
   }
 }

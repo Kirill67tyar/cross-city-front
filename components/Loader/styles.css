@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .loader-wrapper {
+    @apply w-full h-auto max-w-full min-h-full;
+    @apply flex justify-center items-center;
+    @apply fixed top-0 left-0 right-0 z-[55];
+    @apply bg-white;
+  }
+
+  .loader {
+    @apply h-24 w-24;
+    @apply inline-block;
+    @apply text-[#2a4696];
+    @apply border-[10px] border-solid border-current border-r-transparent rounded-full;
+
+    @apply animate-spin align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite];
+  }
+}

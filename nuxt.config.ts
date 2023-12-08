@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt/config";
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ["nuxt-swiper", "@nuxtjs/tailwindcss"],
+  modules: ["nuxt-swiper", "@nuxtjs/tailwindcss", "@hypernym/nuxt-gsap"],
   swiper: {
     prefix: "Swiper",
     styleLang: "css",

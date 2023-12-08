@@ -30,7 +30,7 @@
   }
 
   .footer-image-wrapper {
-    @apply w-full h-auto max-w-[50px] min-h-[50px];
+    @apply w-full h-auto max-w-[240px] min-h-[37px];
     @apply flex items-center;
     @apply mb-2;
   }
@@ -83,7 +83,8 @@
 
   .contacts-list {
     @apply w-full;
-    @apply flex justify-center md:justify-around;
+    @apply flex justify-center;
+    @apply gap-2;
   }
 
   .contacts-item {

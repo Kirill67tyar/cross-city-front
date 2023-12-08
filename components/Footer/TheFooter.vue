@@ -5,67 +5,66 @@
     <div class="footer-container">
       <div class="footer-info-wrapper">
         <div class="footer-image-wrapper">
-          <img src="@/public/taxi.png" alt="" class="footer-image" />
-          <span class="footer-image-title">cross taxi</span>
+          <img src="@/public/logo.png" alt="logo" class="footer-image" />
         </div>
-        <p class="footer-info-text footer-text">
-          Enim sit laboris velit sit sit. Qui nulla proident elit magna occaecat
-          velit.
-        </p>
-        <span class="footer-anchor-link">Оформить</span>
+        <a href="#main-form">
+          <span class="footer-anchor-link">Оформить</span>
+        </a>
       </div>
       <nav class="footer-nav">
         <ul class="footer-navigation-list">
           <span class="footer-list-title">О компании</span>
           <li class="footer-navigation-item footer-text">
-            <NuxtLink to="/about-us">О нас</NuxtLink>
+            <a href="/about-us">О нас</a>
           </li>
-          <li class="footer-navigation-item footer-text">Карьера</li>
-          <li class="footer-navigation-item footer-text">Отзывы</li>
+          <li class="footer-navigation-item footer-text">
+            <a href="/careers">Карьера</a>
+          </li>
         </ul>
 
         <ul class="footer-navigation-list">
           <span class="footer-list-title">Ссылки</span>
-          <li class="footer-navigation-item footer-text">Сервис</li>
-          <li class="footer-navigation-item footer-text">Связаться с нами</li>
           <li class="footer-navigation-item footer-text">
-            <NuxtLink to="/fqo">FAQ</NuxtLink>
+            <a href="/contacts">Связаться с нами</a>
+          </li>
+          <li class="footer-navigation-item footer-text">
+            <a href="/fqo">Часто задаваемые вопросы</a>
+          </li>
+          <li class="footer-navigation-item footer-text">
+            <a href="/city">Города</a>
           </li>
         </ul>
 
         <div class="footer-contacts-wrapper">
           <span class="footer-list-title">Контакты</span>
           <div class="footer-contacts-info">
-            <span class="footer-email footer-text">email</span>
-            <span class="footer-phone footer-text">phone</span>
+            <span class="footer-phone footer-text">+74952302427</span>
+            <span class="footer-phone footer-text"
+              >CrossCity2000@yandex.ru</span
+            >
           </div>
           <ul class="contacts-list">
             <li class="contacts-item">
-              <div class="contacts-image-wrapper">
-                <img
-                  src="../../public/telegram.png"
-                  alt="telegram"
-                  class="contacts-image"
-                />
-              </div>
+              <NuxtLink to="https://t.me/GalinaMoscow">
+                <div class="contacts-image-wrapper">
+                  <img
+                    src="../../public/telegram.png"
+                    alt="telegram"
+                    class="contacts-image"
+                  />
+                </div>
+              </NuxtLink>
             </li>
             <li class="contacts-item">
-              <div class="contacts-image-wrapper">
-                <img
-                  src="../../public/mail.png"
-                  alt="mail"
-                  class="contacts-image"
-                />
-              </div>
-            </li>
-            <li class="contacts-item">
-              <div class="contacts-image-wrapper">
-                <img
-                  src="../../public/whatsapp.png"
-                  alt="whatsapp"
-                  class="contacts-image"
-                />
-              </div>
+              <NuxtLink to="https://wa.me/+79255798917">
+                <div class="contacts-image-wrapper">
+                  <img
+                    src="../../public/whatsapp.png"
+                    alt="whatsapp"
+                    class="contacts-image"
+                  />
+                </div>
+              </NuxtLink>
             </li>
           </ul>
         </div>

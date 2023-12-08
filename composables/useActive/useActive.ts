@@ -16,7 +16,7 @@ export default function useActive(initialValue: any) {
     if (activeState.value !== activeState.previousValue) {
       gsap.to(e.target, {
         duration: 0.6,
-        height: "270px",
+        minHeight: "350px",
         background: "#fff",
 
         onStart: () => {
@@ -27,7 +27,7 @@ export default function useActive(initialValue: any) {
           });
           gsap.to(e.target.children[2], {
             duration: 0.6,
-            height: "112px",
+            minHeight: "112px",
             opacity: 1,
           });
         },
@@ -36,7 +36,7 @@ export default function useActive(initialValue: any) {
       activeState.value = "";
       gsap.to(e.target, {
         duration: 0.6,
-        height: "139px",
+        minHeight: "139px",
         background: "transparent",
 
         onStart: () => {
@@ -47,7 +47,7 @@ export default function useActive(initialValue: any) {
           });
           gsap.to(e.target.children[2], {
             duration: 0.3,
-            height: "0px",
+            minHeight: "0px",
             opacity: 0,
           });
         },

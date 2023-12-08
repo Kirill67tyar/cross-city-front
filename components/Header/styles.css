@@ -24,7 +24,7 @@
   }
 
   .header-image-wrapper {
-    @apply w-[30px] md:w-[40px];
+    @apply w-full h-auto;
     @apply flex;
     @apply mr-1;
   }
