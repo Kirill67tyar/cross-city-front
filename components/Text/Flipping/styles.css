@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .flipping-text-container {
+    @apply w-full h-full;
+    @apply absolute top-0 left-0 right-0 bottom-0 z-[11];
+  }
+
+  .flipping-wrapper {
+    @apply w-full max-w-xs h-auto min-h-full;
+    @apply flex justify-center;
+  }
+
+  .flipping-text {
+    @apply w-full h-full;
+    @apply text-2xl font-black text-center text-white leading-[0px];
+    @apply m-0;
+  }
+}

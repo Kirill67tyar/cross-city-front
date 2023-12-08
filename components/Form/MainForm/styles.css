@@ -5,6 +5,7 @@
 @layer components {
   .form-wrapper {
     @apply w-full h-auto max-w-full min-h-full;
+    @apply lg:max-w-3xl;
     @apply flex flex-col md:flex-row md:flex-wrap md:justify-around items-center;
     @apply my-10 md:my-20 p-6;
     @apply bg-white;
@@ -38,5 +39,91 @@
     @apply py-3;
     @apply bg-[#09b294];
     @apply border-[1px] border-solid border-[#09b294] rounded outline-none;
+    @apply disabled:bg-[#42a08f] disabled:border-[#42a08f];
+
+    @apply transition duration-75;
+  }
+
+  .list-box-label {
+    @apply block;
+    @apply text-sm font-semibold leading-6 text-black;
+  }
+
+  .selected-button-wrapper {
+    @apply mt-2;
+    @apply relative;
+  }
+
+  .list-box-button {
+    @apply w-full;
+    @apply text-left text-black;
+    @apply py-1.5 pl-3 pr-1;
+    @apply bg-white;
+    @apply shadow-sm ring-1 ring-inset ring-gray-300;
+    @apply rounded-md;
+    @apply cursor-default;
+    @apply focus:outline-none focus:ring-2 focus:ring-[#2a4696];
+    @apply sm:text-sm sm:leading-6;
+    @apply relative;
+  }
+
+  .list-box-selected {
+    @apply block;
+    @apply truncate;
+  }
+
+  .list-box-options {
+    @apply w-full max-h-60;
+    @apply text-base;
+    @apply mt-1 py-1;
+    @apply bg-white;
+    @apply rounded-md;
+    @apply shadow-lg ring-1 ring-black ring-opacity-5;
+    @apply overflow-auto;
+    @apply absolute z-10;
+
+    @apply focus:outline-none;
+
+    @apply sm:text-sm;
+  }
+
+  .input-label {
+    @apply block;
+    @apply text-sm font-semibold text-gray-900;
+  }
+
+  .input-wrapper {
+    @apply mt-2;
+    @apply rounded-md shadow-sm;
+    @apply relative;
+  }
+
+  .input {
+    @apply w-full;
+    @apply block;
+    @apply text-gray-900;
+    @apply sm:text-sm sm:leading-6;
+    @apply py-1.5 pr-9 pl-3;
+    @apply border-0 rounded-md outline-none;
+    @apply ring-1 ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#2a4696];
+    @apply placeholder:text-sm placeholder:text-gray-400 placeholder:md:text-base;
+  }
+
+  .error-input-wrapper {
+    @apply w-full;
+    @apply flex items-center justify-end;
+    @apply pr-3;
+    @apply absolute inset-y-0 right-0;
+    @apply pointer-events-none;
+  }
+
+  .error-input-icon {
+    @apply w-5 h-5;
+    @apply stroke-red-500;
+  }
+
+  .error-input-text {
+    @apply text-sm text-red-600;
+    @apply mt-2;
   }
 }

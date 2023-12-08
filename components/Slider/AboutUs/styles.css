@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .about_us-section {
+    @apply px-4;
+    @apply lg:py-24 lg:px-12;
+    @apply bg-[#2a4696];
+  }
+
+  .about_us-slider-wrapper {
+    @apply w-full;
+    @apply flex flex-col;
+  }
+
+  .about_us-slider-title {
+    @apply text-2xl font-black text-white text-center;
+    @apply md:text-3xl;
+    @apply mb-6;
+    @apply md:mb-12;
+  }
+
+  .swiper {
+    @apply w-full max-w-full;
+    @apply md:max-w-2xl;
+    @apply lg:py-14;
+    @apply bg-white;
+    @apply rounded-md;
+    @apply relative;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply w-12 h-12;
+    @apply bg-gray-200;
+    @apply rounded-full;
+    @apply absolute top-[220px];
+
+    @apply after:text-xl after:font-black after:text-black;
+  }
+
+  .swiper-button-prev {
+    @apply after:pr-1;
+  }
+
+  .swiper-button-next {
+    @apply after:pl-1;
+  }
+
+  .swiper-slide {
+    @apply w-full h-auto min-h-[100px];
+    @apply md:min-h-[300px];
+    @apply flex flex-col justify-center items-center;
+    @apply p-2;
+    @apply bg-transparent;
+  }
+
+  .about_us-slide-text {
+    @apply text-base font-normal tracking-wide leading-7 text-center text-black;
+    @apply md:text-xl;
+    @apply mb-5;
+  }
+
+  .about_us-slide-info {
+    @apply flex flex-col items-center;
+  }
+
+  .about_us-slide-name {
+    @apply text-xl font-semibold text-[#151515];
+    @apply mb-2;
+  }
+
+  .about_us-slide-status {
+    @apply text-base font-normal text-[#2a4696];
+  }
+}

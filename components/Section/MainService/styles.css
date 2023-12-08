@@ -40,6 +40,11 @@
     @apply mb-6 md:mb-10;
   }
 
+  .service-image {
+    @apply w-full h-auto max-w-full min-h-full;
+    @apply object-cover;
+  }
+
   .service-info-wrapper {
     @apply w-full h-auto;
     @apply flex flex-col items-center;

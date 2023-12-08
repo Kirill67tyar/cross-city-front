@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .work-section {
+    @apply w-full h-auto max-w-full min-h-full;
+    @apply flex;
+    @apply py-8;
+    @apply lg:px-8;
+    @apply bg-white;
+  }
+
+  .work-container {
+    @apply flex flex-col justify-between;
+    @apply md:flex-row;
+  }
+
+  .work-info-wrapper {
+    @apply w-full max-w-full;
+    @apply flex flex-col;
+    @apply mb-8;
+    @apply md:py-14 lg:py-24 lg:pr-5 lg:mb-0;
+  }
+
+  .work-info-title {
+    @apply text-2xl font-bold text-[#151515] text-center;
+    @apply md:text-3xl lg:text-4xl;
+    @apply mb-3;
+    @apply md:mb-6;
+  }
+
+  .work-info-text {
+    @apply text-base font-normal leading-6 text-center;
+    @apply mb-5;
+  }
+
+  .work-info-button-wrapper {
+    @apply w-full h-auto;
+    @apply flex justify-center;
+  }
+
+  .work-info-button {
+    @apply w-full max-w-[175px] min-h-[53px];
+    @apply block;
+    @apply text-sm font-semibold text-white text-center;
+    @apply py-4 px-9;
+    @apply bg-[#09b294];
+    @apply border-[1px] border-solid border-[#09b294] rounded;
+    @apply outline-none;
+  }
+
+  .work-step-wrapper {
+    @apply w-full;
+    @apply flex justify-center;
+  }
+
+  .work-step-list {
+    @apply w-full;
+    @apply flex flex-col;
+    @apply pl-1;
+    @apply md:pl-5 lg:pt-14 lg:pb-24 lg:pl-20;
+    @apply border-l-[1px] border-solid border-[#ebebeb];
+    @apply gap-10;
+  }
+
+  .work-step-item {
+    @apply flex flex-col;
+    @apply border-b-[1px] border-solid border-[#ebebeb];
+    @apply relative;
+
+    @apply lg:last:border-none;
+
+    @apply before:w-[18px] before:h-[18px];
+    @apply before:bg-[#2a4696];
+    @apply before:border-[1px] before:border-solid before:border-white before:rounded-full;
+    @apply before:absolute before:top-[80.5%] before:right-[97%] before:z-[2];
+    @apply before:sm:top-[40.5%] before:sm:right-[102.5%];
+    @apply before:md:top-[40.5%] before:md:right-[103%];
+    @apply before:lg:top-[40.5%] before:lg:right-[115.5%];
+    @apply before:xl:top-[40.5%] before:xl:right-[113%];
+    @apply before:2xl:top-[40.5%] before:2xl:right-[111%];
+
+    @apply after:w-[30px] after:h-[30px];
+    @apply after:bg-[#2a4696];
+    @apply after:rounded-full;
+    @apply after:opacity-[0.5];
+    @apply after:absolute after:top-[65%] after:right-[96%] before:z-[1];
+    @apply after:sm:top-[28%] after:sm:right-[101.2%];
+    @apply after:md:top-[28%] after:md:right-[101.5%];
+    @apply after:lg:top-[28%] after:lg:right-[114.2%];
+    @apply after:xl:top-[28%] after:xl:right-[112%];
+    @apply after:2xl:top-[28%] after:2xl:right-[110%];
+  }
+
+  .work-step-title {
+    @apply text-xs font-semibold text-[#151515] text-center;
+    @apply md:text-base md:text-start md:whitespace-nowrap lg:text-xl;
+    @apply mb-5;
+  }
+
+  .work-step-span {
+    @apply text-[#2a4696];
+    @apply mb-1;
+  }
+
+  .work-step-text {
+    @apply text-base font-normal leading-6 text-[#151515];
+    @apply pb-5;
+    @apply lg:pb-0;
+  }
+}

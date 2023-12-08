@@ -8,19 +8,23 @@ const props = defineProps<{
   placeholder: string;
   labelName: string;
 }>();
+
+const propsItem = useParse(props);
+
+// console.log(propsItem);
 </script>
 
 <template>
   <div class="mb-4">
-    <label for="email" class="input-label">{{ labelName }}</label>
+    <label :for="propsItem.name" class="input-label">{{ labelName }}</label>
     <div class="input-wrapper">
       <input
-        :type="type"
-        :name="name"
-        :id="name"
+        :type="propsItem.type"
+        :name="propsItem.name"
+        :id="propsItem.name"
         class="input"
-        :placeholder="placeholder"
-        :value="value"
+        :placeholder="propsItem.placeholder"
+        v-model="propsItem.value"
         aria-invalid="false"
       />
       <!-- <div class="error-input-wrapper">

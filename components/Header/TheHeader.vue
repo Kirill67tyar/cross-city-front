@@ -8,14 +8,15 @@ import HeaderBurger from "./HeaderBurger/HeaderBurger.vue";
     <div class="header-container">
       <div class="header-info-container">
         <div class="header-image-wrapper">
-          <img src="../../public/taxi.png" class="header-image" alt="icon" />
+          <a href="/">
+            <img src="@/public/logo.png" class="header-image" alt="icon" />
+          </a>
         </div>
-        <h1 class="header-title">cross taxi</h1>
       </div>
       <HeaderNavigation />
       <HeaderBurger />
       <div class="phone-link-wrapper">
-        <NuxtLink href="tel:+79857356401" class="phone-link after:content-['']"
+        <NuxtLink href="tel:+74952302427" class="phone-link after:content-['']"
           >Позвонить</NuxtLink
         >
       </div>

@@ -12,7 +12,7 @@ import navigation from "~/constants/header-navigation";
         v-for="{ id, name, to } in navigation"
         :key="id"
       >
-        <NuxtLink :to="to">{{ name }}</NuxtLink>
+        <a :href.prevent="to">{{ name }}</a>
       </li>
     </ul>
   </Disclosure>

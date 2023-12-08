@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .info-banner-section {
+    @apply w-full h-auto min-h-[400px];
+    @apply flex justify-center items-center;
+    @apply bg-[url(/public/banner/info-banner.jpg)] bg-no-repeat bg-center bg-cover;
+    @apply mb-12;
+  }
+
+  .info-banner-title {
+    @apply text-4xl font-black text-white text-center uppercase tracking-wide;
+  }
+}

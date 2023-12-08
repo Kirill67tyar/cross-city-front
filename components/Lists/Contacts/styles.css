@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .contacts-list {
+    @apply flex flex-wrap lg:flex-col;
+    @apply gap-2;
+    @apply md:gap-5;
+  }
+
+  .contacts-item {
+    @apply w-full;
+    @apply flex justify-center;
+    @apply md:justify-start;
+    @apply cursor-pointer;
+  }
+
+  .contacts-item-text {
+    @apply text-base font-normal text-white;
+  }
+}

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .success-popup-container {
+    @apply w-full h-auto max-w-full min-h-screen;
+    @apply flex justify-center items-center;
+    @apply fixed top-0 right-0 left-0 z-[55];
+    @apply before:w-full before:h-full;
+    @apply before:bg-black before:opacity-40;
+    @apply before:absolute before:top-0 before:right-0 before:left-0 before:z-50;
+  }
+
+  .success-popup-wrapper {
+    @apply w-full h-auto max-w-xs min-h-full;
+    @apply sm:max-w-sm md:max-w-md lg:max-w-lg;
+    @apply flex justify-center items-center;
+    @apply mx-auto py-12 px-5;
+    @apply bg-[#42a08f];
+    @apply border-[2px] border-solid border-[#42a08f] rounded-md;
+    @apply relative z-[51];
+  }
+
+  .success-popup-text {
+    @apply text-[19px] font-semibold text-white text-center;
+  }
+
+  .success-popup-close {
+    @apply block;
+    @apply absolute top-[4px] right-[4px];
+  }
+}

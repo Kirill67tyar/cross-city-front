@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .contacts-form-wrapper {
+    @apply w-full;
+    @apply flex flex-col;
+    @apply pt-5;
+    @apply md:py-10 md:px-5;
+    @apply bg-white;
+  }
+
+  .contacts-form-title {
+    @apply text-xl font-semibold text-center;
+    @apply md:text-xl lg:text-start lg:text-3xl;
+    @apply mb-7;
+  }
+
+  .contacts-form {
+    @apply w-full h-auto min-h-full;
+    @apply flex flex-col;
+    @apply pb-5;
+    @apply gap-5;
+  }
+
+  .contacts-form-label {
+    @apply w-full;
+    @apply flex flex-col;
+    @apply px-3;
+    @apply md:p-0;
+    @apply relative;
+  }
+
+  .label-info {
+    @apply block;
+    @apply text-base font-semibold text-black;
+    @apply mb-5;
+  }
+
+  .contacts-input {
+    @apply w-full h-auto min-w-full min-h-[55px];
+    @apply block;
+    @apply mx-auto;
+    @apply text-sm font-normal leading-6;
+    @apply py-4 pr-8 pl-6;
+    @apply bg-white;
+    @apply border-[1px] border-solid border-[#ebebeb] rounded;
+  }
+
+  .contacts-textarea {
+    @apply w-full h-auto min-h-[200px];
+    @apply block;
+    @apply text-sm font-normal leading-4;
+    @apply pt-4 px-6;
+    @apply bg-white;
+    @apply border-[1px] border-solid border-[#ebebeb] rounded;
+    @apply resize-none;
+  }
+
+  .contacts-button-wrapper {
+    @apply w-full;
+    @apply flex justify-end;
+    @apply md:pr-5;
+  }
+
+  .contacts-button {
+    @apply w-full md:max-w-xs h-auto max-h-[56px];
+    @apply block;
+    @apply text-sm font-semibold text-white uppercase;
+    @apply mt-10 py-4 px-9;
+    @apply bg-[#09b294];
+    @apply border-[1px] border-solid border-[#09b294] md:rounded;
+    @apply disabled:bg-[#42a08f] disabled:border-[#42a08f];
+    @apply transition duration-75;
+  }
+
+  .error-input-wrapper {
+    @apply w-full;
+    @apply flex items-center justify-end;
+    @apply pr-3;
+    @apply absolute inset-y-0 top-[45px] right-[10px];
+    @apply pointer-events-none;
+  }
+
+  .error-input-icon {
+    @apply w-5 h-5;
+    @apply stroke-red-500;
+  }
+
+  .textarea-max-text {
+    @apply w-full h-auto;
+    @apply text-xs font-normal text-slate-600 text-center;
+    @apply py-3;
+  }
+}
