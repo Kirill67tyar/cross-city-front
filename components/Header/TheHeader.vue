@@ -12,6 +12,7 @@ import HeaderBurger from "./HeaderBurger/HeaderBurger.vue";
             <img src="@/public/logo.png" class="header-image" alt="icon" />
           </a>
         </div>
+        <h1 class="header-title">cross city</h1>
       </div>
       <HeaderNavigation />
       <HeaderBurger />

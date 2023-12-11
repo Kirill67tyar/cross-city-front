@@ -15,25 +15,25 @@ const tariffs = tariffsSlideProps.items;
       <Swiper
         class="max-w-full md:max-w-2xl lg:max-w-4xl xl:max-w-7xl"
         :modules="[Autoplay]"
-        :slides-per-view="2"
-        :space-between="30"
+        :slides-per-view="1"
+        :space-between="10"
         :autoplay="{
           delay: 2000,
           disableOnInteraction: false,
         }"
         :loop="true"
         :breakpoints="{
-          320: {
-            slidesPerView: 1,
-          },
           400: {
             slidesPerView: 2,
+            spaceBetween: 30,
           },
           1024: {
             slidesPerView: 3,
+            spaceBetween: 30,
           },
           1500: {
             slidesPerView: 4,
+            spaceBetween: 30,
           },
         }"
       >
@@ -47,7 +47,9 @@ const tariffs = tariffsSlideProps.items;
           </div>
           <div class="slider-info-wrapper">
             <h4 class="slider-info-title">{{ car_class }}</h4>
-            <span class="slider-info-price">{{ price_per_km + " ₽/КМ" }}</span>
+            <span class="slider-info-price" v-if="price_per_km !== '0'">{{
+              price_per_km + " ₽/КМ"
+            }}</span>
           </div>
         </SwiperSlide>
       </Swiper>

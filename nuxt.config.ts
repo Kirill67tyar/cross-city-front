@@ -3,10 +3,16 @@ import { defineNuxtConfig } from "nuxt/config";
 export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ["nuxt-swiper", "@nuxtjs/tailwindcss", "@hypernym/nuxt-gsap"],
-  swiper: {
-    prefix: "Swiper",
-    styleLang: "css",
-    modules: ["navigation", "pagination", "autoplay"],
+  app: {
+    head: {
+      link: [
+        {
+          rel: "icon",
+          type: "image/x-icon",
+          href: "/favicon.ico",
+        },
+      ],
+    },
   },
   $production: {
     routeRules: {
@@ -19,6 +25,11 @@ export default defineNuxtConfig({
       "composables/*/index.{ts,js,mjs,mts}",
       "composables/**",
     ],
+  },
+  swiper: {
+    prefix: "Swiper",
+    styleLang: "css",
+    modules: ["navigation", "pagination", "autoplay"],
   },
   spaLoadingTemplate: false,
 });

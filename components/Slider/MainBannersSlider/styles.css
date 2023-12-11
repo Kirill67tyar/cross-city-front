@@ -22,4 +22,19 @@
     @apply text-3xl font-bold text-white uppercase text-center;
     @apply absolute top-0 right-0;
   }
+
+  .social-button-wrapper {
+    @apply w-full h-auto;
+    @apply flex justify-around;
+    @apply absolute bottom-[-26px] right-0 left-0 z-[25];
+  }
+
+  .social-button {
+    @apply w-full h-auto max-w-[55px] min-h-[55px];
+  }
+
+  .social-image {
+    @apply w-full h-auto max-w-full min-h-full;
+    @apply object-cover;
+  }
 }

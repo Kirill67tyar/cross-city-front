@@ -24,7 +24,8 @@
   }
 
   .header-image-wrapper {
-    @apply w-full h-auto;
+    @apply w-full h-auto max-w-[40px];
+    @apply md:max-w-[70px];
     @apply flex;
     @apply mr-1;
   }
@@ -36,7 +37,7 @@
   }
 
   .header-title {
-    @apply text-base font-black whitespace-nowrap uppercase;
+    @apply text-sm font-black whitespace-nowrap uppercase;
     @apply md:text-xl;
   }
 

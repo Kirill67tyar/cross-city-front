@@ -5,7 +5,7 @@
 @layer components {
   .work-section {
     @apply w-full h-auto max-w-full min-h-full;
-    @apply flex;
+    @apply flex justify-center;
     @apply py-8;
     @apply lg:px-8;
     @apply bg-white;

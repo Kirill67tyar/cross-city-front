@@ -1,9 +1,14 @@
-<script setup lang="ts">
+<script setup>
 import { Autoplay } from "swiper/modules";
 </script>
 
 <template>
-  <section class="main-banners-section">
+  <section class="main-banners-section relative">
+    <div
+      ref="scrambleText"
+      class="w-full h-auto flex justify-center items-center text-2xl font-bold text-white absolute top-[150px] right-0 left-0 z-40"
+    ></div>
+
     <div class="slider-wrapper">
       <Swiper
         :modules="[Autoplay]"
@@ -43,6 +48,14 @@ import { Autoplay } from "swiper/modules";
         </SwiperSlide>
       </Swiper>
       <LayersDark />
+    </div>
+    <div class="social-button-wrapper">
+      <NuxtLink to="https://t.me/GalinaMoscow" class="social-button">
+        <img src="@/public/telegram.png" alt="telegram" class="social-image" />
+      </NuxtLink>
+      <NuxtLink to="https://wa.me/+79255798917" class="social-button">
+        <img src="@/public/whatsapp.png" alt="whatsapp" class="social-image"
+      /></NuxtLink>
     </div>
   </section>
 </template>

@@ -22,8 +22,9 @@
   }
 
   .swiper-slide {
-    @apply max-w-sm;
+    @apply w-full max-w-full;
     @apply flex flex-col justify-end;
+    @apply mx-auto;
     @apply bg-white;
     @apply border-[1px] border-[#2a4696] rounded-lg;
     @apply dark:bg-gray-800 dark:border-gray-700;
