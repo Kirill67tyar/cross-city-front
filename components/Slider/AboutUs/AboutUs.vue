@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { Navigation } from "swiper/modules";
+
+import questions from "~/constants/questions";
 </script>
 
 <template>
@@ -18,21 +20,53 @@ import { Navigation } from "swiper/modules";
         :swipe-handler="false"
         class="swiper"
       >
-        <SwiperSlide v-for="item in 6">
+        <SwiperSlide
+          :id="id"
+          v-for="{ id, name, description, date } in questions"
+          :key="id"
+        >
           <div class="about_us-slide-image"></div>
           <p class="about_us-slide-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Pellentesque placerat eros ac finibus congue. Integer consectetur,
-            lorem nec accumsan, sem mauris pharetra arcu, id viverra eros
+            {{ description }}
           </p>
           <div class="about_us-slide-info">
-            <h3 class="about_us-slide-name">Alice Doe</h3>
-            <span class="about_us-slide-status">Regular Client {{ item }}</span>
+            <h3 class="about_us-slide-name">{{ name }}</h3>
+            <span class="about_us-slide-status">Постоянный клиент</span>
           </div>
         </SwiperSlide>
 
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
+        <div class="swiper-button-prev">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
       </Swiper>
     </div>
   </section>

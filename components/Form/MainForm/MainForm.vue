@@ -27,7 +27,7 @@ const mainState = ref({
   phone: "",
   location1: "",
   location2: "",
-  tariffState: useParse(selected.value.id),
+  tariffState: selected.value.id,
   date: "",
 });
 
@@ -68,8 +68,14 @@ const handleEvent = () => {
   visiblePopup.value = false;
 };
 
+watch(selected, (newValue) => {
+  mainState.value.tariffState = newValue.id;
+});
+
 watchEffect(() => {
   const { name, phone, location1, location2, date } = mainState.value;
+
+  console.log(date);
 
   const isAnyFieldEmpty =
     !name || !phone || !location1 || !location2 || date === "";

@@ -7,6 +7,7 @@
         <div class="footer-image-wrapper">
           <img src="@/public/logo.png" alt="logo" class="footer-image" />
         </div>
+        <h1 class="footer-image-title">cross taxi</h1>
         <a href="#main-form">
           <span class="footer-anchor-link">Оформить</span>
         </a>
@@ -18,7 +19,7 @@
             <a href="/about-us">О нас</a>
           </li>
           <li class="footer-navigation-item footer-text">
-            <a href="/careers">Карьера</a>
+            <a href="/careers">Вакансии</a>
           </li>
         </ul>
 

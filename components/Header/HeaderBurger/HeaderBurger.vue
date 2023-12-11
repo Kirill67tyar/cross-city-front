@@ -2,12 +2,6 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import navigation from "~/constants/header-navigation";
-
-const handleClickBurgerItems = (e) => {
-  e.preventDefault();
-
-  console.log(e);
-};
 </script>
 
 <template>
@@ -35,7 +29,7 @@ const handleClickBurgerItems = (e) => {
           v-for="{ id, name, to } in navigation"
           :key="id"
         >
-          <DisclosureButton>
+          <DisclosureButton class="w-full text-start">
             <a :href="to">{{ name }}</a>
           </DisclosureButton>
         </div>

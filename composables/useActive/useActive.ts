@@ -1,8 +1,6 @@
 import { reactive, toRef } from "vue";
 import gsap, { Power3 } from "gsap";
 
-const tl = gsap.timeline();
-
 export default function useActive(initialValue: any) {
   const activeState = reactive({
     value: initialValue,
@@ -53,8 +51,6 @@ export default function useActive(initialValue: any) {
         },
       });
     }
-
-    console.log(e.target.children);
   };
   return {
     ...toRef(activeState),

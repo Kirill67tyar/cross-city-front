@@ -24,7 +24,7 @@
   .swiper {
     @apply w-full max-w-full;
     @apply md:max-w-2xl;
-    @apply lg:py-14;
+    @apply sm:px-9  lg:py-14;
     @apply bg-white;
     @apply rounded-md;
     @apply relative;
@@ -35,17 +35,21 @@
     @apply w-12 h-12;
     @apply bg-gray-200;
     @apply rounded-full;
-    @apply absolute top-[220px];
+    @apply absolute top-[135px];
+    @apply lg:top-[190px];
+    @apply hidden sm:flex;
 
     @apply after:text-xl after:font-black after:text-black;
   }
 
   .swiper-button-prev {
     @apply after:pr-1;
+    @apply left-0;
   }
 
   .swiper-button-next {
     @apply after:pl-1;
+    @apply right-0;
   }
 
   .swiper-slide {

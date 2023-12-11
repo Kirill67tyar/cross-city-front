@@ -7,7 +7,7 @@
         <h2 class="work-info-title">Как мы работаем</h2>
         <p class="work-info-text">Мы поможем вам сделать заказ</p>
         <div class="work-info-button-wrapper">
-          <NuxtLink href="/" class="work-info-button">Заказать</NuxtLink>
+          <a href="/" class="work-info-button">Заказать</a>
         </div>
       </div>
       <div class="work-step-wrapper">
