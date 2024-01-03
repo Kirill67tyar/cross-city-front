@@ -11,16 +11,19 @@
 
   .main-banner-title-wrapper {
     @apply flex flex-col;
-    @apply absolute bottom-[250px] left-[55px] z-[100];
+    @apply absolute bottom-[60px] left-[15px] z-[70];
+    @apply sm:bottom-[150px] md:bottom-[220px] md:left-[35px] lg:bottom-[300px] lg:left-[45px] xl:bottom-[350px] 2xl:bottom-[400px];
   }
 
   .main-banner-title {
-    @apply text-[36px] font-bold text-white;
+    @apply text-sm font-bold text-white;
+    @apply sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl;
     @apply mb-1;
   }
 
   .main-banner-sub-title {
-    @apply text-lg text-white font-normal;
+    @apply text-[11px] text-white font-normal;
+    @apply sm:text-sm md:text-base lg:text-lg xl:text-2xl;
   }
 
   .slider-wrapper {
