@@ -12,6 +12,20 @@ export default defineNuxtConfig({
           href: "/favicon.ico",
         },
       ],
+
+      title: "Cross city - Междугороднее такси из Москвы по всей России",
+
+      meta: [
+        {
+          name: "description",
+          content:
+            "Кросс сити такси» предоставляет услуги междугороднего такси по всей России круглосуточно, по доступным ценам и с комфортом",
+        },
+        {
+          name: "yandex-verification",
+          content: "8f8820d36207c1d0",
+        },
+      ],
     },
   },
   $production: {

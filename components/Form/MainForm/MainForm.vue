@@ -75,8 +75,6 @@ watch(selected, (newValue) => {
 watchEffect(() => {
   const { name, phone, location1, location2, date } = mainState.value;
 
-  console.log(date);
-
   const isAnyFieldEmpty =
     !name || !phone || !location1 || !location2 || date === "";
   isAnyFieldEmpty ? (checkBooleanRef = false) : (checkBooleanRef = true);

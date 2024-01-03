@@ -4,6 +4,14 @@ import { Autoplay } from "swiper/modules";
 
 <template>
   <section class="main-banners-section relative">
+    <div class="main-banner-title-wrapper">
+      <h1 class="main-banner-title">Междугороднее такси cross city taxi</h1>
+
+      <span class="main-banner-sub-title"
+        >безопасное, надёжное и комфортное такси по всей России и СНГ</span
+      >
+    </div>
+
     <div
       ref="scrambleText"
       class="w-full h-auto flex justify-center items-center text-2xl font-bold text-white absolute top-[150px] right-0 left-0 z-40"

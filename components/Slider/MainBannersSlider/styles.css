@@ -9,6 +9,20 @@
     @apply relative;
   }
 
+  .main-banner-title-wrapper {
+    @apply flex flex-col;
+    @apply absolute bottom-[250px] left-[55px] z-[100];
+  }
+
+  .main-banner-title {
+    @apply text-[36px] font-bold text-white;
+    @apply mb-1;
+  }
+
+  .main-banner-sub-title {
+    @apply text-lg text-white font-normal;
+  }
+
   .slider-wrapper {
     @apply w-full h-auto;
   }
