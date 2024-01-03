@@ -2,6 +2,16 @@
 import { Form, Field, ErrorMessage } from "vee-validate";
 import * as Yup from "yup";
 
+useHead({
+  title: "Контактная информация",
+  meta: [
+    {
+      name: "description",
+      content: "Заказ такси круглосуточно, телефон: +74952302427",
+    },
+  ],
+});
+
 const schema = Yup.object().shape({
   name: Yup.string().required("*"),
   mail: Yup.string().required("*"),
