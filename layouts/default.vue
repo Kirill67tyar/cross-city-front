@@ -5,17 +5,13 @@ import TheFooter from "~/components/Footer/TheFooter.vue";
 
 <template>
   <div class="DefaultLayout">
-    <TheHeader />
-    <slot />
-    <TheFooter />
+    <TheHeader/>
+    <div id="anchor"/>
+    <slot/>
+    <TheFooter/>
   </div>
 </template>
 
 <style scoped>
-.DefaultLayout {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+@import "styles.css";
 </style>

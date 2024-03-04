@@ -1,8 +1,8 @@
 <script setup>
 import useParse from "@/composables/useParse/useParse";
 
-const { data } = await useFetch(
-  "https://cross-city-taxi.ru/core/api/tariffs/list/"
+const {data} = await useFetch(
+    "https://cross-city-taxi.ru/core/api/tariffs/list/"
 );
 
 const tariffs = useParse(data.value);
@@ -10,11 +10,11 @@ const tariffs = useParse(data.value);
 
 <template>
   <main class="main">
-    <SliderMainBannersSlider />
-    <FormMainForm :items="tariffs" />
-    <SectionMainService />
-    <SliderTariffs :items="tariffs" />
-    <SectionQuestion />
+    <SliderMainBannersSlider/>
+    <FormMainForm :items="tariffs"/>
+    <SectionMainService/>
+    <SliderTariffs :items="tariffs"/>
+    <SectionQuestion/>
   </main>
 </template>
 
@@ -26,6 +26,7 @@ const tariffs = useParse(data.value);
   flex-grow: 1;
 
   margin: 0 0 50px 0;
+
   .hero-img {
     width: 100%;
     height: auto;
