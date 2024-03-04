@@ -9,8 +9,8 @@ useHead({
   ],
 });
 
-const { data } = await useFetch(
-  "https://cross-city-taxi.ru/core/api/cities/list/"
+const {data} = await useFetch(
+    "https://cross-city-taxi.ru/core/api/cities/list/"
 );
 
 const cities = useParse(data.value);
@@ -18,7 +18,7 @@ const cities = useParse(data.value);
 
 <template>
   <section class="flex flex-grow-[4] mt-24">
-    <ListsCities :items="cities" />
+    <ListsCities :items="cities"/>
   </section>
 </template>
 

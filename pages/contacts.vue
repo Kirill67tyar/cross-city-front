@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Form, Field, ErrorMessage } from "vee-validate";
+import {Form, Field, ErrorMessage} from "vee-validate";
 import * as Yup from "yup";
 
 useHead({
@@ -22,13 +22,13 @@ const schema = Yup.object().shape({
 
 <template>
   <section class="contacts-section">
-    <BannerInfo title="Контакты" />
+    <BannerInfo title="Контакты"/>
     <div class="contacts-wrapper">
       <div class="contacts-info-wrapper">
         <h2 class="contacts-info-title">Информация о контактах</h2>
-        <ListsContacts />
+        <ListsContacts/>
       </div>
-      <FormContacts />
+      <FormContacts/>
     </div>
   </section>
 </template>

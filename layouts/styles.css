@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+    .DefaultLayout {
+        @apply w-full h-auto min-h-screen;
+        @apply flex flex-col;
+    }
+
+    #anchor {
+        @apply w-full h-0;
+        @apply block;
+    }
+}
